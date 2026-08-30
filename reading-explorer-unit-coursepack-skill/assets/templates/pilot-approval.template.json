@@ -1,0 +1,19 @@
+{
+  "schema_version": "re.pilot-approval.v1",
+  "status": "needs_review",
+  "approved_by": "needs_review",
+  "approved_at": "needs_review",
+  "approval_evidence": "needs_review",
+  "artifacts": [
+    {
+      "role": "practice_book",
+      "path": "needs_review",
+      "sha256": "needs_review"
+    },
+    {
+      "role": "teacher_guide",
+      "path": "needs_review",
+      "sha256": "needs_review"
+    }
+  ]
+}

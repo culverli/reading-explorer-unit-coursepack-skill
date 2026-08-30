@@ -1,0 +1,28 @@
+{
+  "schema_version": "re.coursepack-project.v2",
+  "project_id": "needs_review",
+  "title": "needs_review",
+  "status": "needs_review",
+  "production_stage": "plan",
+  "public_repository": false,
+  "learner": {
+    "school_grade": 6,
+    "book_level": "needs_review",
+    "proficiency_range": "needs_review",
+    "class_size": "needs_review",
+    "devices": "teacher display only",
+    "students_own_textbook": false
+  },
+  "lesson_duration_minutes": 40,
+  "artifact_contract": {
+    "teacher_unit_guide": true,
+    "student_practice_book": true,
+    "separate_homework_booklet": false,
+    "classroom_display_ppt": false,
+    "fixed_activity_kit": false
+  },
+  "source_index": "source-index.json",
+  "source_ledger": "source-ledger.json",
+  "coursepack_spec": "coursepack-spec.json",
+  "pilot_approval": "qa/pilot-approval.json"
+}

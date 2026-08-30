@@ -1,0 +1,31 @@
+.DS_Store
+__pycache__/
+*.pyc
+
+# Teacher-owned and publisher material must never enter the skill repository.
+*.pdf
+*.docx
+*.pptx
+*.xlsx
+*.mp3
+*.m4a
+*.wav
+*.mp4
+*.mov
+sources/
+source-materials/
+artifacts/
+qa/
+projects/
+Unit 1/
+tmp/
+local-reference/
+PROJECT_MEMORY.md
+
+# Runtime extraction and verification records may contain textbook text.
+source-ledger.json
+*.source-ledger.json
+*.source-usage.json
+*.source-report.json
+*.difficulty-profile.json
+*.unit-spec.json

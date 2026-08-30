@@ -1,0 +1,51 @@
+{
+  "schema_version": "re.docx-style.v1",
+  "page": {
+    "size": "US Letter",
+    "orientation": "portrait",
+    "width_inches": 8.5,
+    "height_inches": 11.0,
+    "margin_left_inches": 0.62,
+    "margin_right_inches": 0.62,
+    "margin_top_inches": 0.55,
+    "margin_bottom_inches": 0.55,
+    "header_distance_inches": 0.25,
+    "footer_distance_inches": 0.25
+  },
+  "fonts": {
+    "latin": "Arial",
+    "cjk_fallback": "Arial Unicode MS",
+    "student_body_pt": 10.1,
+    "teacher_body_pt": 9.2,
+    "student_minimum_pt": 9.8,
+    "teacher_minimum_pt": 8.8
+  },
+  "colors": {
+    "green": "267A5A",
+    "green_dark": "1C6046",
+    "green_pale": "EAF4EF",
+    "gold": "C88A00",
+    "gold_pale": "FFF5D9",
+    "blue_pale": "EAF2F8",
+    "gray_pale": "F3F5F6",
+    "gray": "5E666B",
+    "line": "B8C7C0",
+    "ink": "202427",
+    "white": "FFFFFF"
+  },
+  "student_page_grammar": [
+    "section heading",
+    "numbered exercise bar",
+    "direct instruction with optional concise Chinese gloss",
+    "functional support",
+    "numbered items with adjacent response space"
+  ],
+  "teacher_page_grammar": [
+    "lesson title",
+    "purpose/source/materials/preparation",
+    "timed lesson stages",
+    "board/display and anticipated errors",
+    "homework and next-lesson check",
+    "answers or judgment criteria"
+  ]
+}
