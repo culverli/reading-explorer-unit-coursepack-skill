@@ -1,0 +1,48 @@
+{
+  "schema_version": "re.article-project-brief.v1",
+  "project_id": "synthetic-u01a",
+  "article": {
+    "level": "Foundations",
+    "unit_code": "SYN-U01A",
+    "title": "A Signal at Night"
+  },
+  "learner": {
+    "school_grade": 6,
+    "proficiency": "high-beginner to low-intermediate",
+    "students_have_textbook": true
+  },
+  "source_package": {
+    "01_textbook": {"status": "found", "files": ["synthetic-textbook.pdf"]},
+    "02_worksheet": {"status": "found", "files": ["synthetic-worksheet.pdf"]},
+    "03_bloom": {"status": "found", "files": ["synthetic-bloom.docx"]},
+    "04_vocabulary": {"status": "found", "files": ["synthetic-vocabulary.docx"]},
+    "05_pre_post": {"status": "not_supplied", "files": []},
+    "06_grammar_cloze": {"status": "not_applicable", "files": []},
+    "07_official_extra": {"status": "not_supplied", "files": []},
+    "08_teacher_notes": {"status": "not_supplied", "files": []},
+    "09_layout_authority": {"status": "found", "files": ["teacher-edited-layout.docx"]}
+  },
+  "reading_design": {
+    "mode": "intensive",
+    "lesson_count": 7,
+    "lesson_minutes": 40,
+    "teacher_flow": [
+      "quick textbook comprehension",
+      "Bloom short answers and discussion",
+      "article vocabulary and phrases",
+      "sentence patterns and final writing"
+    ],
+    "assignment_balance": "majority_homework"
+  },
+  "outputs": {
+    "student_practice_book": true,
+    "answer_key": true,
+    "teaching_outline": true
+  },
+  "layout_authority": {
+    "role": "teacher-edited Unit 1A portable standard",
+    "sha256": "449dd380026c72a39cd0832175e2f9d684d35efe8d33a038d338e5d62a6f9860"
+  },
+  "confirmed_by_teacher": true,
+  "notes": ["Synthetic validator fixture; contains no publisher content."]
+}

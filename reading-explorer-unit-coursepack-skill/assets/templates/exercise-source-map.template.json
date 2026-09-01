@@ -1,0 +1,16 @@
+{
+  "schema_version": "re.exercise-source-map.v1",
+  "project_id": "needs_review",
+  "exercises": [
+    {
+      "exercise_id": "E01",
+      "task_family": "quick_comprehension",
+      "source_ids": [],
+      "source_locations": [],
+      "treatment": "select",
+      "article_support": [],
+      "answer_status": "needs_review",
+      "notes": []
+    }
+  ]
+}

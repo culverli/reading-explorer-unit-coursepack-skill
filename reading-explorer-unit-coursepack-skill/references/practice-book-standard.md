@@ -1,139 +1,110 @@
-# Practice Book Standard
+# Student Practice Book Standard
 
-## Role
+## Approved authority
 
-The Practice Book is the learner's single printed exercise book for both class and home. It must be usable by a general Reading Explorer learner, not only by the teacher who designed one specific lesson sequence.
+The current layout authority is the teacher-edited Unit 1A pilot, approved after two successful classroom lessons on 2026-09-01.
 
-Classwork/homework assignment, games, grouping, timing, scoring, and next-lesson use belong in the Teacher Guide. The Practice Book contains exercises.
+- private authority SHA-256: `449dd380026c72a39cd0832175e2f9d684d35efe8d33a038d338e5d62a6f9860`
+- role: content and layout authority for the revised Student Practice Book
+- public repository rule: record the reusable standard, never publish the source-derived DOCX
 
-## Source Route
+Follow the teacher-edited version rather than an older generated sample whenever the file is supplied. Apply the measured decisions in [teacher-edited-layout-delta.md](teacher-edited-layout-delta.md) when the authority file is not available on the current computer.
 
-Students do not automatically own the textbook.
+## Page grammar
 
-- Insert only the permitted reading-body image in the private Practice Book when the teacher has provided and authorized it.
-- Do not reproduce adjacent Before You Read, Reading Skill, infographic, comprehension, or vocabulary pages unless the teacher explicitly selects them.
-- If a textbook exercise is needed, re-typeset the full task, options, word bank, example, and response location.
-- Do not write `Complete p. 10, Exercise B` when students do not have that page.
-- Keep publisher page/exercise provenance in the Teacher Guide or source ledger, not on student pages.
+Use a flat printed-workbook hierarchy:
 
-## Exercise Construction
+1. Unit/article title and `Student Practice Book` identity.
+2. Numbered `Exercise N · Title` bars.
+3. One short, direct instruction.
+4. The complete item set and adjacent response space.
 
-Every exercise needs:
+Do not add lesson-plan boxes, teaching rationale, assignment labels, self-check panels, activity logistics, or decorative dashboard cards.
 
-- a numbered title naming the task family;
-- one principal action;
-- a short direct English instruction;
-- a concise Chinese gloss only when operational support is useful;
-- a complete item set;
-- all options, words, examples, or supports needed;
-- response space immediately adjacent;
-- an answer or judgment reference in the Teacher Guide.
+Use compact but readable pages. The approved student body and table text is 11 pt with deliberate 1.5- or 2-line spacing according to task type. Avoid oversized titles, large empty panels, response lines that do not fit the product, and dense walls of tiny text.
 
-Use `WHO + ACTION + PRODUCT` only when the learner must know who acts. Do not add `with a partner`, `your team`, `the teacher will check`, or `tomorrow` to make an ordinary printed exercise look interactive.
+## Source-first reading tasks
 
-## Language Staircase
+For comprehension, prefer selection and re-typesetting:
 
-For active language, distribute practice across:
+- select suitable textbook or worksheet multiple-choice questions for quick checking;
+- select or lightly adapt article-specific Bloom questions for short answers and deeper thinking;
+- use pre-/post-reading or official extra questions only when they match the chosen reading mode and lesson count;
+- preserve the supported idea and verify every answer against the article.
 
-1. age-appropriate English meaning;
-2. source context;
-3. fixed chunk/collocation;
-4. form or precision decision;
-5. controlled sentence use;
-6. error repair or transformation;
-7. complete new context;
-8. later mixed retrieval, text building, retell, or transfer.
+Do not manufacture a parallel comprehension set when the supplied package already contains strong items.
 
-Not every word needs every exercise. The active set as a whole must complete the staircase. Do not postpone all vocabulary work to the final review lesson.
+## Authored language practice
 
-Single obvious word-class choices may appear as a quick check only. Follow them with a task requiring repair, whole-sentence production, contextual choice, or new use.
+Author new practice where the supplied package is usually too word-level or too limited.
 
-## Reading and Text Work
+### Words and phrases
 
-Include according to the text and lesson path:
+- Ask students to find a word or phrase in the article from a clear meaning.
+- Ensure the requested answer occurs exactly in the verified article.
+- Move from isolated word recognition to complete sentence use.
+- Teach useful phrases or words that go together, not only single dictionary forms.
 
-- gist and paragraph purpose;
-- detail and shortest evidence;
-- fact/theory/unknown or supported/not supported judgments;
-- inference only when evidence supports it;
-- sequence, cause/effect, comparison, and discourse function;
-- summary cloze or text rebuilding;
-- progressive retell preparation;
-- short transfer writing or speaking preparation.
+### Sentence-level work
 
-Reading comprehension must not crowd out vocabulary, chunks, sentence form, grammar, and language transfer.
+Select article sentence frames worth reusing. Practise them through one or more of:
 
-## Sentence-by-Sentence Study
+- choose the correct word form in a meaningful sentence;
+- correct one target error and rewrite the whole sentence;
+- combine two ideas with a supplied connector;
+- rewrite without changing the meaning;
+- translate a complete Chinese sentence into English;
+- adapt a frame to a new topic or personal example;
+- write a complete new sentence using a supplied word, phrase, or frame.
 
-Do not print the teacher's completed sentence analysis.
+Do not rely on exercises that only fill one or two disconnected words. A short word-form check may appear, but it must lead to complete sentence meaning or production elsewhere in the book.
 
-Use:
+## Approved repertoire
 
-- a source sentence with targeted underlining/labeling;
-- guided noticing slots;
-- collocation completion;
-- form choice with a meaningful contrast;
-- sentence combining;
-- sentence transformation;
-- error repair requiring the whole corrected sentence;
-- new-context sentence construction;
-- concise note space that becomes complete during class.
+Choose from these families; do not treat them as a fixed quota:
 
-Student pages must not say which language is productive or recognition-only.
+1. textbook multiple choice;
+2. article-supported short answers;
+3. Bloom analysis/evaluation questions;
+4. find words in the article;
+5. find phrases in the article;
+6. complete new sentences with vocabulary;
+7. choose useful word forms in context;
+8. whole-sentence correction;
+9. sentence combining;
+10. meaning-preserving rewriting;
+11. Chinese-to-English sentence translation;
+12. grammar cloze or text reconstruction;
+13. summary cloze;
+14. Yes/No or supported/not-supported judgment with correction;
+15. short retell, explanation, or functional report.
 
-## Homework Inside the Same Book
+Select the smallest coherent set that fits the sources, reading mode, and lesson count.
 
-Homework exercises remain ordinary Practice Book exercises. The teacher assigns them by number.
+## Intensive/extensive calibration
 
-Design delayed work so:
+For intensive reading, build a fuller progression from comprehension and Bloom questions into vocabulary, phrases, sentence work, summary, and output.
 
-- the target repeats but the surface task and answer route change;
-- students cannot copy the same-day answer directly;
-- all language has already been taught;
-- the expected time is 15–30 minutes;
-- oral work has a teacher-verifiable route recorded in the Teacher Guide;
-- the product is checked, compared, repaired, rehearsed, or reused next lesson.
+For extensive reading, keep the Practice Book shorter. A pre-reading grammar cloze may lead into fast reading, but use fewer follow-up language exercises and avoid full sentence-by-sentence study.
 
-Do not print `Homework`, `Assign after`, `Next lesson use`, or a checkpoint on every exercise unless the teacher explicitly wants visible assignment divisions.
+## Student-facing language
 
-## Generality Test
+Use direct actions such as `choose`, `find`, `underline`, `write`, `correct`, `rewrite`, `combine`, `translate`, and `complete`.
 
-Move text to the Teacher Guide if it tells one class:
+Default to English-only titles, section headings, exercise bars, directions, labels, and student-information fields. Do not add bilingual subtitles merely because the learners speak Chinese.
 
-- how to form groups;
-- where to stand;
-- who keeps score;
-- what the teacher will award;
-- which group presents;
-- how long the teacher gives;
-- when tomorrow's random check occurs.
+Use Chinese only when Chinese is the actual language input of the task, most notably Chinese-to-English translation, or when the teacher explicitly requests a necessary gloss. Keep abstract terms such as retrieval, transfer, productive vocabulary, target language, evidence standard, or lesson objective off student pages.
 
-Keep a written preparation record only when it remains useful after the classroom event.
+## Completion checks
 
-## Page and Type Grammar
+Reject an exercise when:
 
-- Use the approved Letter page geometry and compact density.
-- Use one major section heading per learning block.
-- Use numbered exercise bars and direct instructions.
-- Keep item numbering local to each exercise.
-- Use tables only for repeated comparable fields.
-- Use word banks only when they genuinely reduce irrelevant retrieval load.
-- Match writing lines/boxes to sentence, table, paragraph, or planning output.
-- Avoid large decorative blanks, repeated metadata bands, interface cards, badges, pills, and dashboard grids.
-- Use sentence case or ordinary Title Case; never all caps for display hierarchy.
-- Remove `Before you finish`, `Now I can`, and generic self-reflection unless the teacher explicitly requests a real instructional use.
-
-## Clarity Audit
-
-For every exercise, ask:
-
-1. Can a learner identify the action within five seconds?
-2. Is the number of words/options compatible with the number of blanks, including any stated extra?
-3. Is each item answerable from taught language or supplied information?
-4. Does each blank elicit the target rather than an irrelevant context noun?
-5. Is the response space sufficient?
-6. Does the answer key cover it?
-7. Is the cognitive work different from the nearby exercise?
-8. If used for homework, is it meaningfully different from same-day classwork?
-
-Reject the exercise if any answer is no.
+- the action or answer location is unclear;
+- a word bank, option, source text, example, or response line is missing;
+- the answer cannot be verified from the article or supplied material;
+- the word/phrase requested does not occur in the article;
+- a short-answer question is too broad for the available space and level;
+- vocabulary remains only at isolated-word level;
+- translation or rewriting accepts multiple meanings but the key gives only one unexplained answer;
+- the Answer Key does not cover it;
+- the layout differs from the supplied teacher-edited authority without a reason.

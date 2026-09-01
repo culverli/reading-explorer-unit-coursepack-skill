@@ -1,0 +1,43 @@
+{
+  "schema_version": "re.article-project-brief.v1",
+  "project_id": "needs_review",
+  "article": {
+    "level": "needs_review",
+    "unit_code": "needs_review",
+    "title": "needs_review"
+  },
+  "learner": {
+    "school_grade": 6,
+    "proficiency": "needs_review",
+    "students_have_textbook": true
+  },
+  "source_package": {
+    "01_textbook": {"status": "not_supplied", "files": []},
+    "02_worksheet": {"status": "not_supplied", "files": []},
+    "03_bloom": {"status": "not_supplied", "files": []},
+    "04_vocabulary": {"status": "not_supplied", "files": []},
+    "05_pre_post": {"status": "not_supplied", "files": []},
+    "06_grammar_cloze": {"status": "not_supplied", "files": []},
+    "07_official_extra": {"status": "not_supplied", "files": []},
+    "08_teacher_notes": {"status": "not_supplied", "files": []},
+    "09_layout_authority": {"status": "not_supplied", "files": []}
+  },
+  "reading_design": {
+    "mode": "needs_review",
+    "lesson_count": 0,
+    "lesson_minutes": 0,
+    "teacher_flow": [],
+    "assignment_balance": "majority_homework"
+  },
+  "outputs": {
+    "student_practice_book": true,
+    "answer_key": true,
+    "teaching_outline": true
+  },
+  "layout_authority": {
+    "role": "teacher-edited Unit 1A portable standard",
+    "sha256": "449dd380026c72a39cd0832175e2f9d684d35efe8d33a038d338e5d62a6f9860"
+  },
+  "confirmed_by_teacher": false,
+  "notes": []
+}

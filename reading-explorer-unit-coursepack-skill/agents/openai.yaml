@@ -1,4 +1,4 @@
 interface:
-  display_name: "Reading Explorer Coursepack"
-  short_description: "Build complete RE Teacher Guides and Practice Books"
-  default_prompt: "Use $reading-explorer-unit-coursepack-skill to build a source-grounded Unit with a complete lesson-by-lesson Teacher Guide and an approved-style Practice Book."
+  display_name: "Reading Explorer Article Coursepack"
+  short_description: "Build source-grounded RE practice packs in three parts"
+  default_prompt: "Use $reading-explorer-unit-coursepack-skill to ask for my sources and teaching choices, then build a Student Practice Book, Answer Key, and concise Teaching Outline."

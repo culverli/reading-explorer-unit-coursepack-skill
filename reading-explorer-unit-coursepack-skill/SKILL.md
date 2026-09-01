@@ -1,93 +1,90 @@
 ---
 name: reading-explorer-unit-coursepack-skill
-description: Build source-grounded Reading Explorer coursepacks for Grade 6 from teacher-owned books, readings, exercises, images, audio, video, and transcripts. Use when creating or revising a complete lesson-by-lesson Teacher Guide and a merged printable Practice Book for Reading Explorer Foundations or RE1; when planning Deep Reading A, Transfer Reading B, video/listening, vocabulary, chunks, grammar, retelling, homework, games, and review; or when validating source fidelity, exercise clarity, lesson completeness, DOCX layout, pilot approval, and GitHub-safe packaging.
+description: Build source-grounded, article-level Reading Explorer teaching packs from teacher-owned textbook pages and supplementary exercise materials. Use when Codex needs to create or revise the approved three-piece set—Student Practice Book, Answer Key, and concise Teaching Outline—for Foundations or RE1; when the teacher must first choose intensive or extensive reading, lesson count, and teaching flow; or when selecting textbook comprehension questions, Bloom-style short answers, vocabulary, phrases, grammar cloze, sentence practice, translation, summary, and writing tasks without inventing unsupported source content.
 ---
 
-# Reading Explorer Unit Coursepack
+# Reading Explorer Article Coursepack
 
-Build a teachable Reading Explorer Unit, not a textbook summary and not a set of attractive generic worksheets. Preserve source truth, teach language explicitly, and make every printed exercise immediately completable.
+Build a usable three-piece teaching pack from the teacher's own sources. Treat the latest teacher-edited Unit 1A pilot as the layout authority and the two successfully taught lessons as approval of this workflow.
 
-## Approved Artifact Contract
+## Default artifact contract
 
-Produce two student/teacher artifacts by default:
+Create these three DOCX files unless the user requests a smaller scope:
 
-1. `Teacher_Unit_Guide.docx` — a complete lesson-by-lesson 40-minute teaching guide.
-2. `Student_Practice_Book.docx` — one general-purpose printed exercise book used for both classwork and homework.
+1. `Student_Practice_Book.docx`
+2. `Practice_Book_Answer_Key.docx`
+3. `Teaching_Outline.docx`
 
-Do not create a separate Homework Booklet, Classroom Display PPT, or fixed Activity Kit unless the user explicitly requests one. Route classwork and homework by Practice Book exercise number inside the Teacher Guide. Keep optional cards or jigsaw sheets in a Teacher Guide appendix only when the activity genuinely requires them.
+Keep the Teaching Outline concise. Do not revive the former full Teacher Unit Guide contract unless the user explicitly asks for one.
 
-The approved Practice Book authority is the teacher-reviewed five-page Unit 1A sample described in [approved-practice-book-standard.md](references/approved-practice-book-standard.md). Preserve its functional hierarchy, density, task grammar, and student/teacher boundary without copying its source-derived content into this repository.
+## Mandatory intake gate
 
-## Required Workflow
+Do not begin exercise writing from memory or from the Reading Explorer title alone.
 
-1. **Inspect the request and sources.** Record learner profile, Reading Explorer level/edition, Unit, lesson duration, source pages, available media, printing constraints, and whether students own the book. Mark unknown decisions `needs_review`.
-2. **Create the private project.** Run `scripts/init_coursepack_project.py <project-dir>`. Keep teacher-owned sources and generated classroom artifacts outside this public skill folder.
-3. **Build source truth.** Read [source-fidelity.md](references/source-fidelity.md). Separate article body, headings, captions, exercises, Reading Skill, infographics, and media scripts. Verify source sentences against rendered pages before close study.
-4. **Design the Unit path.** Read [instructional-system.md](references/instructional-system.md) and [learner-and-difficulty.md](references/learner-and-difficulty.md). Plan Reading A as Deep Reading, Reading B as Transfer Reading, then video/listening, integrated output, retrieval, feedback, and homework.
-5. **Map language coverage.** For every Reading A sentence, record meaning, first-encounter vocabulary, English definitions, chunks/collocations, useful grammar/pattern, Practice Book evidence, later retrieval, and teacher notes. Simple sentences may take little time; none may silently disappear from the teacher ledger.
-6. **Materialize every lesson.** Read [teacher-guide-standard.md](references/teacher-guide-standard.md). Each lesson must include its introduction/lead-in, purpose, materials, preparation, timed stages, teacher moves, ready-to-say English, student product, checks, transitions, board plan, optional interaction, lesson close, homework, and next-lesson check.
-7. **Materialize the Practice Book.** Read [practice-book-standard.md](references/practice-book-standard.md). Write stable exercises for a general learner audience. Keep classroom organization, team scoring, teacher checks, and assignment decisions out of student pages.
-8. **Validate before DOCX production.** Run `scripts/validate_coursepack_spec.py <coursepack-spec.json>`. Fix every error. A planning outline or exercise list is not a finished specification.
-9. **Produce a pilot.** Generate representative meaning-first, close-study, and consolidation/review lessons plus representative Practice Book pages. Do not generate the complete Unit until the teacher explicitly approves the pilot. Bind approval to SHA-256 in `pilot-approval.json`.
-10. **Generate the two DOCX files.** Use the installed `documents` skill. Reuse the page tokens and component patterns in `assets/templates/docx-style-tokens.json` and `scripts/build_synthetic_reference.py`; do not reuse the synthetic wording as course content.
-11. **Audit and render.** Run `scripts/audit_coursepack_docx.py` on both DOCX files, render every page, and inspect every page at full size. Read [qa-and-approval.md](references/qa-and-approval.md).
-12. **Deliver cleanly.** Return only requested final artifacts. Keep commercial pages, source ledgers containing textbook text, extraction caches, renders, and QA scratch files out of GitHub.
+When source materials have not been supplied, ask for the recurring package described in [intake-and-reading-modes.md](references/intake-and-reading-modes.md). At minimum, request:
 
-## Instructional Non-Negotiables
+- the textbook article pages or a verified reading body;
+- the textbook question/vocabulary pages that may be reused;
+- the relevant supplementary pack, workbook, Bloom-question resource, cloze sheet, pre-/post-reading material, or teacher notes;
+- the latest teacher-edited sample when its layout should be followed;
+- optional audio, video, or transcript when it belongs to the requested scope.
 
-- Treat context as the vehicle for language learning, not as a substitute for it.
-- Keep Reading A meaning-first for at least two lessons before systematic sentence-by-sentence language study.
-- Teach active vocabulary at first encounter with an age-appropriate English definition, source context, useful chunk/collocation, controlled accuracy work, and new-context use.
-- Put meaningful input before open output and comprehension before explanation-heavy language work.
-- Move from quick recognition to precision/repair, guided use, independent new-context use, and delayed retrieval.
-- Make homework 15–30 minutes, based only on taught content, and different from the same-day classwork surface task and answer route.
-- State a teacher-verifiable route for oral homework; peer rehearsal alone is not completion evidence.
-- Give speaking quiet preparation and rehearsal before public checking.
-- Require individual evidence inside pair, team, competition, or jigsaw work.
-- Use games selectively. Require a language purpose plus at least two of: right/wrong judgment, scoring, evidence, construction/repair, strategy, time pressure, or competition.
+In the same intake, ask these three questions exactly or in equally direct wording:
 
-## Student/Teacher Boundary
+1. Is this article for **intensive reading（精读）** or **extensive reading（泛读）**?
+2. How many lessons are planned, and how many minutes is each lesson?
+3. What teaching flow do you already have in mind?
 
-Keep these only in the Teacher Guide or internal specification:
+Ask only the smallest additional question needed to resolve a real decision, such as student level, access to the textbook, or classwork/homework balance. If the article itself is missing or unreadable, stop the dependent work. If a supplementary source is unavailable, state the resulting limitation and proceed only after the teacher accepts it.
 
-- productive/recognition tiers and language-selection rationale;
-- complete sentence analysis and completed notes;
-- lesson aims, timing, grouping, teacher questions, transitions, scores, random checks, and next-lesson use;
-- source IDs, checkpoints, build stages, pilot metadata, and answer keys.
+Record the decisions in `article-project-brief.json`. Initialize a private project with `scripts/init_article_project.py` and validate the brief with `scripts/validate_article_brief.py` before producing final artifacts.
 
-Keep these in the Practice Book:
+## Workflow
 
-- reading-body image only when the private project has permission to reproduce it;
-- concise exercise headings and direct instructions;
-- English-definition vocabulary work, chunks, forms, sentence/grammar practice, text building, evidence, retelling, review, and transfer;
-- examples/support only when needed to complete the task;
-- response space shaped to the requested product.
+1. **Inspect and fingerprint sources.** Separate the article, textbook multiple-choice questions, vocabulary tasks, Bloom prompts, cloze material, answer pages, and teacher-edited layout sample. Keep commercial files outside the public Skill folder.
+2. **Confirm the reading mode.** Read [intake-and-reading-modes.md](references/intake-and-reading-modes.md). Follow the teacher's stated mode instead of assuming every Reading A is deep reading.
+3. **Build a source map.** Record which source supports each selected comprehension item and which article sentence supports each authored vocabulary, phrase, grammar, or sentence task.
+4. **Select before authoring.** Re-typeset suitable source questions first. Author new exercises mainly for vocabulary, phrases, sentence patterns, translation, summary, and writing when the supplied materials do not already provide enough practice.
+5. **Design the Practice Book.** Read [practice-book-standard.md](references/practice-book-standard.md) and [teacher-edited-layout-delta.md](references/teacher-edited-layout-delta.md). Follow the teacher-edited layout hierarchy, typography, spacing, response-space logic, English/Chinese boundary, and green/gold visual system.
+6. **Create the Answer Key.** Read [answer-key-standard.md](references/answer-key-standard.md). Give exact closed answers, acceptable open responses, and concise marking criteria.
+7. **Create the Teaching Outline.** Read [teaching-outline-standard.md](references/teaching-outline-standard.md). Route a small number of pivotal exercises to class and the majority to homework unless the teacher chooses otherwise.
+8. **Generate and verify DOCX.** Use the installed `documents` skill. Apply `assets/templates/docx-style-tokens.json`, render every page, inspect every page at full size, and complete the checks in [source-and-qa.md](references/source-and-qa.md).
+9. **Deliver only requested artifacts.** Keep sources, extracted textbook text, working ledgers, renders, and private paths out of GitHub.
 
-## Reference Routing
+## Source-grounded exercise policy
 
-- Read [approved-practice-book-standard.md](references/approved-practice-book-standard.md) before any Practice Book design or review.
-- Read [teacher-guide-standard.md](references/teacher-guide-standard.md) before any Teacher Guide design or review.
-- Read [practice-book-standard.md](references/practice-book-standard.md) before writing student exercises.
-- Read [instructional-system.md](references/instructional-system.md) before allocating lessons, language work, homework, or output.
-- Read [source-fidelity.md](references/source-fidelity.md) for extraction, sentence IDs, and verbatim verification.
-- Read [learner-and-difficulty.md](references/learner-and-difficulty.md) before calibrating support and challenge.
-- Read [grammar-progression.md](references/grammar-progression.md) before selecting grammar or sentence targets.
-- Read [activity-design.md](references/activity-design.md) before creating a game, competition, jigsaw, movement, pair, or group task.
-- Read [qa-and-approval.md](references/qa-and-approval.md) before pilot approval, full production, or delivery.
-- Read [provenance.md](references/provenance.md) before GitHub publication or redistribution.
+- Use textbook multiple-choice questions for quick comprehension when suitable.
+- Use supplied Bloom prompts for short answers, deeper comprehension, and critical thinking; adapt wording to the learner level without changing the supported idea.
+- Build find-the-word and find-the-phrase tasks from meanings that actually resolve to the article.
+- Move vocabulary beyond isolated words into complete sentence contexts.
+- Select high-value article sentence frames and practise them through correction, combination, transformation, guided sentence writing, or Chinese-to-English translation.
+- Use supplied cloze, pre-/post-reading, and worksheet content selectively. Do not include every available task merely because it exists.
+- Prefer assembling strong source questions over manufacturing new comprehension questions. Every new comprehension item must be answerable from the verified article.
+- Give every closed task an answer and every open task judgment criteria.
 
-## Stop Conditions
+## Intensive and extensive reading
+
+For **intensive reading**, normally move from quick comprehension to Bloom-style short answers, vocabulary and phrases, high-value sentence work, text rebuilding/summary, and a short final output. Allocate more rereading and language practice.
+
+For **extensive reading**, a short grammar cloze before revealing the article is valid when it activates familiar grammar and creates curiosity. Keep it brief, use a selected excerpt or concise source-grounded version, then reveal the article for timed reading, gist/detail checking, and only selective language follow-up. Do not let the cloze consume the reading lesson or introduce untaught grammar. Read the full guardrails in [intake-and-reading-modes.md](references/intake-and-reading-modes.md).
+
+## Student/teacher boundary
+
+Keep only learner actions, exercise content, examples, word banks, and response spaces in the Practice Book. Keep lesson timing, classwork/homework assignment, checking moves, board plan, answer logic, and teacher rationale in the Teaching Outline or Answer Key.
+
+Use concrete learner-facing directions. Raise the thinking demand through the text and required response, not through abstract teaching terminology.
+
+## Stop conditions
 
 Stop the dependent artifact when:
 
-- the edition, page, reading body, or media source is uncertain;
-- source extraction has not been visually verified;
-- a lesson is only a route table or answer key rather than a complete teachable design;
-- a Practice Book exercise depends on missing textbook questions, missing screen content, or an unstated teacher explanation;
-- new vocabulary/grammar appears first in homework;
-- a student exercise exposes teacher/design metalanguage or has no clear action/answer location;
-- the Practice Book repeats classwork as homework with only cosmetic changes;
-- a closed task lacks an answer, or an open task lacks judgment criteria;
-- the representative pilot has not been explicitly approved;
-- any DOCX page has clipping, missing glyphs, unintended blanks, cramped text, broken tables, or missing response space;
-- a public repository contains commercial, teacher-owned, source-derived, or private-path material.
+- the article, edition, or requested reading is uncertain;
+- the source pages have not been visually verified;
+- the teacher has not answered reading mode, lesson count/duration, or intended flow;
+- a comprehension item is unsupported by the article;
+- a vocabulary or phrase-search answer does not occur in the article;
+- homework introduces language or task types not prepared in class;
+- a closed task lacks an answer or an open task lacks criteria;
+- the three artifacts disagree on exercise number, wording, lesson route, or marking;
+- any DOCX page has clipping, missing glyphs, broken tables, awkward page breaks, cramped text, or inadequate response space;
+- a public repository contains commercial material, generated classroom documents, private paths, or source-derived text.

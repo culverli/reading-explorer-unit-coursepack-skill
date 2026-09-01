@@ -29,3 +29,6 @@ source-ledger.json
 *.source-report.json
 *.difficulty-profile.json
 *.unit-spec.json
+article-project-brief.json
+source-inventory.json
+exercise-source-map.json

@@ -1,5 +1,5 @@
 {
-  "schema_version": "re.docx-style.v1",
+  "schema_version": "re.teacher-edited-docx-style.v2",
   "page": {
     "size": "US Letter",
     "orientation": "portrait",
@@ -15,10 +15,27 @@
   "fonts": {
     "latin": "Arial",
     "cjk_fallback": "Arial Unicode MS",
-    "student_body_pt": 10.1,
-    "teacher_body_pt": 9.2,
-    "student_minimum_pt": 9.8,
-    "teacher_minimum_pt": 8.8
+    "unit_title_pt": 19.0,
+    "practice_book_label_pt": 12.5,
+    "student_info_pt": 10.5,
+    "section_heading_pt": 14.0,
+    "exercise_bar_pt": 12.0,
+    "exercise_bar_long_min_pt": 10.5,
+    "student_body_pt": 11.0,
+    "student_table_pt": 11.0,
+    "student_minimum_pt": 10.5,
+    "teacher_body_pt": 10.0,
+    "teacher_minimum_pt": 9.0,
+    "header_footer_pt": 8.0
+  },
+  "paragraphs": {
+    "controlled_task_line_spacing": 1.5,
+    "production_task_line_spacing": 2.0,
+    "section_heading_space_before_pt": 1.0,
+    "section_heading_space_after_pt": 3.0,
+    "direction_space_before_pt": 2.0,
+    "direction_space_after_pt": 3.0,
+    "body_space_after_pt": 1.0
   },
   "colors": {
     "green": "267A5A",
@@ -33,13 +50,33 @@
     "ink": "202427",
     "white": "FFFFFF"
   },
+  "language_policy": {
+    "interface_default": "English only",
+    "chinese_allowed": [
+      "Chinese source sentences in Chinese-to-English translation tasks",
+      "a teacher-requested gloss that is necessary to understand the operation"
+    ],
+    "student_info_fields": ["Name", "Class"],
+    "omit_by_default": ["Date", "bilingual section subtitles", "bilingual directions"]
+  },
   "student_page_grammar": [
     "section heading",
     "numbered exercise bar",
-    "direct instruction with optional concise Chinese gloss",
+    "direct English instruction",
     "functional support",
     "numbered items with adjacent response space"
   ],
+  "student_layout_rules": {
+    "running_header": "Created by Culver Li",
+    "word_bank_separator": "/",
+    "word_bank_fill": "gold_pale",
+    "find_answer_cells": "blank without underline glyphs",
+    "ordinary_sentence_response_lines": 1,
+    "translation_response_lines": 2,
+    "visible_final_title_label": false,
+    "word_table_widths_pt": [30.0, 324.0, 167.0],
+    "phrase_table_widths_pt": [30.0, 283.0, 208.0]
+  },
   "teacher_page_grammar": [
     "lesson title",
     "purpose/source/materials/preparation",

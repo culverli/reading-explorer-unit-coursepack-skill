@@ -1,0 +1,21 @@
+{
+  "schema_version": "re.article-source-inventory.v1",
+  "project_id": "needs_review",
+  "article_unit_code": "needs_review",
+  "sources": [
+    {
+      "source_id": "needs_review",
+      "package_slot": "01_textbook",
+      "filename": "needs_review",
+      "sha256": "needs_review",
+      "unit_code": "needs_review",
+      "source_role": "article_truth",
+      "usable_regions": [],
+      "answer_key_available": false,
+      "review_status": "needs_review",
+      "planned_use": "verify",
+      "concerns": [],
+      "exclusion_reason": ""
+    }
+  ]
+}

@@ -1,19 +1,18 @@
 # Provenance and Redistribution
 
-This skill is a substantial redesign inspired by:
+This Skill is a redesigned descendant of **Reading Explorer Lesson Plan Skill** by CathyErer / Cathy Chu.
 
-- **Reading Explorer Lesson Plan Skill** by CathyErer / Cathy Chu
-- Repository: https://github.com/CathyErer/reading-explorer-lesson-plan-skill
-- Reviewed source revision: `668a76fc143fe54401cd82c1d8c6f3e469a2eca1`
-- Upstream license: MIT License, copyright 2026 Cathy Chu
+- upstream repository: `https://github.com/CathyErer/reading-explorer-lesson-plan-skill`
+- reviewed upstream revision: `668a76fc143fe54401cd82c1d8c6f3e469a2eca1`
+- upstream license: MIT License, copyright 2026 Cathy Chu
 
-Retained design ideas include source-faithful sentence extraction, level-sensitive language, teacher-facing close-reading annotation, sentence-structure analysis, reading-strategy notes, and render-based DOCX QA.
+Retained ideas include source-faithful extraction, level-sensitive language support, useful sentence analysis, and render-based DOCX QA.
 
-This redesign changes the planning unit from one article/90-minute lesson to a full-Unit coursepack with Reading A, Reading B, video/listening, integrated language work, classroom activities, review, and homework routing. Its final artifact architecture was refined through teacher review into a complete lesson-by-lesson Teacher Guide plus one merged general-purpose Practice Book.
+The current version replaces the former full-Unit/two-artifact workflow with the teacher-approved article-level three-piece set: Student Practice Book, separate Answer Key, and concise Teaching Outline. It also introduces structured recurring source intake plus flexible intensive/extensive-reading design.
 
-Before publishing:
+Before redistribution:
 
-1. preserve the upstream MIT copyright and permission notice;
+1. preserve the upstream MIT notice;
 2. keep this provenance record;
-3. include only original instructions, scripts, templates, and synthetic samples;
-4. exclude all commercial textbook pages, extracted articles, exercises, answer keys, media, transcripts, student data, and local paths.
+3. include only original instructions, scripts, templates, and synthetic test data;
+4. exclude all commercial sources, copied questions/answers, generated coursepacks, private paths, and student data.
