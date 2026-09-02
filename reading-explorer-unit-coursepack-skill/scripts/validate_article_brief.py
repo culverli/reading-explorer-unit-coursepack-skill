@@ -18,15 +18,15 @@ SLOTS = [
     "06_grammar_cloze",
     "07_official_extra",
     "08_teacher_notes",
-    "09_layout_authority",
 ]
 STATUSES = {"found", "not_supplied", "not_applicable", "wrong_unit"}
+LAYOUT_SELECTION_STATUSES = {"resolved", "portable_standard_only", "teacher_supplied"}
 
 
 def validate(data: dict) -> list[str]:
     errors: list[str] = []
-    if data.get("schema_version") != "re.article-project-brief.v1":
-        errors.append("schema_version must be re.article-project-brief.v1")
+    if data.get("schema_version") != "re.article-project-brief.v2":
+        errors.append("schema_version must be re.article-project-brief.v2")
 
     article = data.get("article", {})
     for key in ("level", "unit_code", "title"):
@@ -67,6 +67,35 @@ def validate(data: dict) -> list[str]:
     for key in ("student_practice_book", "answer_key", "teaching_outline"):
         if outputs.get(key) is not True:
             errors.append(f"outputs.{key} must be true for the default three-piece set")
+
+    layout = data.get("layout_exemplars", {})
+    if not isinstance(layout, dict):
+        errors.append("layout_exemplars is required")
+    else:
+        if not str(layout.get("index_path", "")).strip():
+            errors.append("layout_exemplars.index_path must be recorded")
+        if layout.get("path_base") != "workspace_root":
+            errors.append("layout_exemplars.path_base must be workspace_root")
+        status = layout.get("selection_status")
+        if status not in LAYOUT_SELECTION_STATUSES:
+            errors.append(
+                "layout_exemplars.selection_status must be one of "
+                f"{sorted(LAYOUT_SELECTION_STATUSES)}"
+            )
+        selected_ids = layout.get("selected_ids")
+        if not isinstance(selected_ids, dict):
+            errors.append("layout_exemplars.selected_ids must be an object grouped by artifact type")
+        else:
+            for artifact_type in ("student_practice_book", "answer_key", "teaching_outline"):
+                ids = selected_ids.get(artifact_type)
+                if not isinstance(ids, list):
+                    errors.append(f"layout_exemplars.selected_ids.{artifact_type} must be a list")
+                elif len(ids) > 2:
+                    errors.append(f"layout_exemplars.selected_ids.{artifact_type} may contain at most two IDs")
+                elif status in {"resolved", "teacher_supplied"} and outputs.get(artifact_type) is True and not ids:
+                    errors.append(
+                        f"layout_exemplars.selected_ids.{artifact_type} is required for the selected layout status"
+                    )
 
     if data.get("confirmed_by_teacher") is not True:
         errors.append("confirmed_by_teacher must be true")

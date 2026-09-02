@@ -48,14 +48,17 @@ REQUIRED_SKILL_FILES = (
     "references/answer-key-standard.md",
     "references/teaching-outline-standard.md",
     "references/source-and-qa.md",
+    "references/layout-exemplar-selection.md",
     "references/provenance.md",
     "assets/templates/article-project-brief.template.json",
+    "assets/templates/approved-layout-exemplars.template.json",
     "assets/templates/source-inventory.template.json",
     "assets/templates/exercise-source-map.template.json",
     "assets/templates/docx-style-tokens.json",
     "assets/samples/article-project-brief.synthetic.json",
     "scripts/init_article_project.py",
     "scripts/validate_article_brief.py",
+    "scripts/validate_layout_exemplars.py",
     "scripts/validate_skill_repo.py",
 )
 

@@ -5,7 +5,7 @@ description: Build source-grounded, article-level Reading Explorer teaching pack
 
 # Reading Explorer Article Coursepack
 
-Build a usable three-piece teaching pack from the teacher's own sources. Treat the latest teacher-edited Unit 1A pilot as the layout authority and the two successfully taught lessons as approval of this workflow.
+Build a usable three-piece teaching pack from the teacher's own sources. Treat the teacher-edited Unit 1A pilot as the current primary layout exemplar and the two successfully taught lessons as approval of this workflow.
 
 ## Default artifact contract
 
@@ -17,6 +17,17 @@ Create these three DOCX files unless the user requests a smaller scope:
 
 Keep the Teaching Outline concise. Do not revive the former full Teacher Unit Guide contract unless the user explicitly asks for one.
 
+## Curated layout exemplars
+
+Keep layout references outside individual article-source folders. At the workspace root, look first for `approved-layout-exemplars.json`, then follow [layout-exemplar-selection.md](references/layout-exemplar-selection.md).
+
+- The index is a curated shortlist, not a register of every approved product.
+- Select the primary exemplar for each requested artifact type. Read one exemplar by default and never more than two.
+- Do not scan `02_三份资料成品` or open every approved coursepack to discover formatting patterns.
+- Resolve workspace-relative paths from the index location and verify the recorded SHA-256 before relying on a file.
+- If the index or file is unavailable, use the portable rules in this Skill. Ask for a reference file only when the teacher requests an exact comparison that the portable rules cannot support.
+- Add a future product to the shortlist only when the teacher explicitly chooses it as a better or meaningfully different layout exemplar.
+
 ## Mandatory intake gate
 
 Do not begin exercise writing from memory or from the Reading Explorer title alone.
@@ -26,7 +37,6 @@ When source materials have not been supplied, ask for the recurring package desc
 - the textbook article pages or a verified reading body;
 - the textbook question/vocabulary pages that may be reused;
 - the relevant supplementary pack, workbook, Bloom-question resource, cloze sheet, pre-/post-reading material, or teacher notes;
-- the latest teacher-edited sample when its layout should be followed;
 - optional audio, video, or transcript when it belongs to the requested scope.
 
 In the same intake, ask these three questions exactly or in equally direct wording:
@@ -41,11 +51,11 @@ Record the decisions in `article-project-brief.json`. Initialize a private proje
 
 ## Workflow
 
-1. **Inspect and fingerprint sources.** Separate the article, textbook multiple-choice questions, vocabulary tasks, Bloom prompts, cloze material, answer pages, and teacher-edited layout sample. Keep commercial files outside the public Skill folder.
+1. **Inspect and fingerprint sources.** Separate the article, textbook multiple-choice questions, vocabulary tasks, Bloom prompts, cloze material, answer pages, and teacher notes. Keep commercial files outside the public Skill folder. Resolve layout exemplars through the workspace-level shortlist rather than an article source slot.
 2. **Confirm the reading mode.** Read [intake-and-reading-modes.md](references/intake-and-reading-modes.md). Follow the teacher's stated mode instead of assuming every Reading A is deep reading.
 3. **Build a source map.** Record which source supports each selected comprehension item and which article sentence supports each authored vocabulary, phrase, grammar, or sentence task.
 4. **Select before authoring.** Re-typeset suitable source questions first. Author new exercises mainly for vocabulary, phrases, sentence patterns, translation, summary, and writing when the supplied materials do not already provide enough practice.
-5. **Design the Practice Book.** Read [practice-book-standard.md](references/practice-book-standard.md) and [teacher-edited-layout-delta.md](references/teacher-edited-layout-delta.md). Follow the teacher-edited layout hierarchy, typography, spacing, response-space logic, English/Chinese boundary, and green/gold visual system.
+5. **Design the Practice Book.** Read [practice-book-standard.md](references/practice-book-standard.md) and [teacher-edited-layout-delta.md](references/teacher-edited-layout-delta.md). Use the selected exemplar when available, then follow the recorded hierarchy, typography, spacing, response-space logic, English/Chinese boundary, and green/gold visual system.
 6. **Create the Answer Key.** Read [answer-key-standard.md](references/answer-key-standard.md). Give exact closed answers, acceptable open responses, and concise marking criteria.
 7. **Create the Teaching Outline.** Read [teaching-outline-standard.md](references/teaching-outline-standard.md). Route a small number of pivotal exercises to class and the majority to homework unless the teacher chooses otherwise.
 8. **Generate and verify DOCX.** Use the installed `documents` skill. Apply `assets/templates/docx-style-tokens.json`, render every page, inspect every page at full size, and complete the checks in [source-and-qa.md](references/source-and-qa.md).

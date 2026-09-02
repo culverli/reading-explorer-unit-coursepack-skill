@@ -38,7 +38,7 @@ Before DOCX production, verify:
 
 Use the installed `documents` skill and its strict render-and-verify process.
 
-Apply the approved profile in `../assets/templates/docx-style-tokens.json` unless the teacher supplies a newer edited authority.
+Resolve only the relevant curated exemplar for each artifact type through `approved-layout-exemplars.json`. Verify its path and SHA-256, and record the selected exemplar ID in the project brief. Never scan the entire output tree or compare every approved product. Apply the approved profile in `../assets/templates/docx-style-tokens.json` when no selected exemplar is available.
 
 For every final DOCX:
 
@@ -74,3 +74,5 @@ Never publish:
 - render images or QA caches;
 - student data;
 - absolute local paths such as `/Users/...`.
+
+The live `approved-layout-exemplars.json` is also private because it points to local generated artifacts. Publish only its generic template.

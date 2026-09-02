@@ -1,5 +1,5 @@
 {
-  "schema_version": "re.article-project-brief.v1",
+  "schema_version": "re.article-project-brief.v2",
   "project_id": "synthetic-u01a",
   "article": {
     "level": "Foundations",
@@ -19,8 +19,7 @@
     "05_pre_post": {"status": "not_supplied", "files": []},
     "06_grammar_cloze": {"status": "not_applicable", "files": []},
     "07_official_extra": {"status": "not_supplied", "files": []},
-    "08_teacher_notes": {"status": "not_supplied", "files": []},
-    "09_layout_authority": {"status": "found", "files": ["teacher-edited-layout.docx"]}
+    "08_teacher_notes": {"status": "not_supplied", "files": []}
   },
   "reading_design": {
     "mode": "intensive",
@@ -39,9 +38,15 @@
     "answer_key": true,
     "teaching_outline": true
   },
-  "layout_authority": {
-    "role": "teacher-edited Unit 1A portable standard",
-    "sha256": "449dd380026c72a39cd0832175e2f9d684d35efe8d33a038d338e5d62a6f9860"
+  "layout_exemplars": {
+    "index_path": "approved-layout-exemplars.json",
+    "path_base": "workspace_root",
+    "selection_status": "portable_standard_only",
+    "selected_ids": {
+      "student_practice_book": [],
+      "answer_key": [],
+      "teaching_outline": []
+    }
   },
   "confirmed_by_teacher": true,
   "notes": ["Synthetic validator fixture; contains no publisher content."]

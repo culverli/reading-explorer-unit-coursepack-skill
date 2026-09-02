@@ -1,14 +1,14 @@
 # Student Practice Book Standard
 
-## Approved authority
+## Approved exemplar
 
-The current layout authority is the teacher-edited Unit 1A pilot, approved after two successful classroom lessons on 2026-09-01.
+The current primary Practice Book layout exemplar is the teacher-edited Unit 1A pilot, approved after two successful classroom lessons on 2026-09-01.
 
 - private authority SHA-256: `449dd380026c72a39cd0832175e2f9d684d35efe8d33a038d338e5d62a6f9860`
-- role: content and layout authority for the revised Student Practice Book
+- role: content and layout exemplar for the revised Student Practice Book
 - public repository rule: record the reusable standard, never publish the source-derived DOCX
 
-Follow the teacher-edited version rather than an older generated sample whenever the file is supplied. Apply the measured decisions in [teacher-edited-layout-delta.md](teacher-edited-layout-delta.md) when the authority file is not available on the current computer.
+Resolve the file through the workspace-level shortlist in [layout-exemplar-selection.md](layout-exemplar-selection.md); do not expect a copy inside the current article folder. Follow the selected teacher-edited version rather than an older generated sample when it is available. Apply the measured decisions in [teacher-edited-layout-delta.md](teacher-edited-layout-delta.md) when the exemplar file is not available on the current computer.
 
 ## Page grammar
 
@@ -107,4 +107,4 @@ Reject an exercise when:
 - vocabulary remains only at isolated-word level;
 - translation or rewriting accepts multiple meanings but the key gives only one unexplained answer;
 - the Answer Key does not cover it;
-- the layout differs from the supplied teacher-edited authority without a reason.
+- the layout differs from the selected teacher-edited exemplar or portable standard without a reason.

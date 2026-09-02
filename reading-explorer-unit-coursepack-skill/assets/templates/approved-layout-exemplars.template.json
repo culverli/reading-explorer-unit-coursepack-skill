@@ -1,0 +1,25 @@
+{
+  "schema_version": "re.approved-layout-exemplars.v1",
+  "selection_policy": {
+    "default_exemplars_per_artifact": 1,
+    "maximum_exemplars_per_artifact": 2,
+    "scan_output_tree": false,
+    "automatic_registration": false
+  },
+  "exemplars": {
+    "student_practice_book": [
+      {
+        "id": "needs_review",
+        "status": "primary",
+        "priority": 1,
+        "scope": ["default"],
+        "path": "relative/path/to/Student_Practice_Book.docx",
+        "sha256": "needs_review",
+        "approved_at": "YYYY-MM-DD",
+        "reason_selected": "needs_review"
+      }
+    ],
+    "answer_key": [],
+    "teaching_outline": []
+  }
+}

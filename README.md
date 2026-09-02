@@ -10,7 +10,9 @@ The current default output contract is the classroom-tested three-piece set:
 
 Before production, the Skill asks for the source package and confirms whether the article is intensive or extensive reading, the planned lesson count/duration, and the teacher's intended flow. It then selects suitable source questions, adds article-grounded vocabulary/phrase/sentence practice, routes a small amount of work to class and the majority to homework, and verifies all three DOCX files.
 
-The recurring source intake is organized into nine slots: textbook, worksheet and answers, Bloom prompts, vocabulary materials, pre/post reading, grammar cloze, official extras, teacher notes, and the latest teacher-edited layout authority. The intake is structured; lesson design stays flexible.
+The recurring source intake is organized into eight slots: textbook, worksheet and answers, Bloom prompts, vocabulary materials, pre/post reading, grammar cloze, official extras, and teacher notes. The intake is structured; lesson design stays flexible.
+
+Layout references are handled separately through a workspace-level `approved-layout-exemplars.json` shortlist. The Skill reads one primary exemplar per artifact type by default, never scans every approved product, and never requires a copied layout-reference folder inside each article source folder.
 
 The portable Practice Book standard records the teacher's edits to the classroom-tested Unit 1A pilot: 11 pt student text, task-sensitive 1.5/2.0 line spacing, English-only interface language, Chinese retained as translation input, cleaner answer spaces, and the approved green/gold workbook hierarchy.
 
@@ -20,4 +22,4 @@ Copy or symlink [`reading-explorer-unit-coursepack-skill`](reading-explorer-unit
 
 ## Public/private boundary
 
-This repository contains only reusable instructions, validators, templates, and synthetic test data. Commercial textbook pages, supplementary packs, generated classroom DOCX files, extracted article text, renders, and private local paths are intentionally excluded.
+This repository contains only reusable instructions, validators, templates, and synthetic test data. Commercial textbook pages, supplementary packs, generated classroom DOCX files, the live exemplar index, extracted article text, renders, and private local paths are intentionally excluded.

@@ -14,9 +14,10 @@ Treat the teacher's recurring upload as a structured package. Match every file t
 | `06_grammar_cloze` | Article grammar-cloze document | Optional extensive-reading opener or later text reconstruction |
 | `07_official_extra` | Extra comprehension, additional reading, graphic organizer, video sheet, crossword | Selective enrichment; never automatic inclusion |
 | `08_teacher_notes` | Close-reading notes, self-study pages, personal notes | Teacher insight and possible language targets; verify against article |
-| `09_layout_authority` | Latest teacher-edited Practice Book or other approved sample | Page hierarchy, density, typography, spacing, and response-area preference |
 
 Ask the teacher to upload the full package when possible. Record each slot as `found`, `not_supplied`, `not_applicable`, or `wrong_unit`. Do not repeatedly ask about a slot already present.
+
+Layout exemplars are not part of this recurring source package. Resolve them from the workspace-level `approved-layout-exemplars.json` shortlist described in [layout-exemplar-selection.md](layout-exemplar-selection.md). Do not create a layout-reference folder inside every article folder.
 
 ## Structured analysis record
 
@@ -31,6 +32,8 @@ Create a source inventory before exercise design. For every file record:
 - layout or extraction concerns;
 - planned use: `select`, `adapt`, `verify`, `style_only`, or `exclude`;
 - exclusion reason when unused.
+
+Record the separately selected layout exemplar IDs in `article-project-brief.json`; do not add exemplar files to the article source inventory.
 
 Then create a compact exercise-source map:
 
